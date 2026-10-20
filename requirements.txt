@@ -1,9 +1,5 @@
-apache-airflow
-apache-airflow-providers-mysql
-apache-airflow-providers-standard
-pyspark
+streamlit
 pandas
 pymysql
-streamlit
 plotly
 requests
