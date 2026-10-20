@@ -1,0 +1,15 @@
+# Python & Virtual Environments
+__pycache__/
+*.py[cod]
+airflow_venv/
+
+# Airflow & Temp Data
+/tmp/*.json
+/tmp/*.parquet
+/tmp/*.csv
+airflow.cfg
+airflow.db
+unittests.cfg
+
+# Credentials / Local config
+.env

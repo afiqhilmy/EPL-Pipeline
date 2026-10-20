@@ -1,0 +1,9 @@
+apache-airflow
+apache-airflow-providers-mysql
+apache-airflow-providers-standard
+pyspark
+pandas
+pymysql
+streamlit
+plotly
+requests
