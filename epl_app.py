@@ -5,22 +5,6 @@ import pandas as pd
 import pymysql
 import plotly.express as px
 
-@st.cache_resource
-def get_db_connection():
-    # Safely fetch password from Streamlit Cloud Secrets or local environment variables
-    if "MYSQL_PASSWORD" in st.secrets:
-        db_password = st.secrets["MYSQL_PASSWORD"]
-    else:
-        db_password = os.environ.get("MYSQL_PASSWORD", "Afiq-2004") # Fallback for local testing
-
-    return pymysql.connect(
-        host='localhost',          # Note: If MySQL is hosted locally on your PC, Streamlit Cloud won't reach 'localhost' unless using a cloud database or tunnel. 
-        user='airflow_user',
-        password=db_password,
-        database='football_db',
-        cursorclass=pymysql.cursors.DictCursor
-    )
-
 # 1. Page Configuration (Dark theme aesthetic)
 st.set_page_config(
     page_title="EPL Data Engineering Dashboard",
